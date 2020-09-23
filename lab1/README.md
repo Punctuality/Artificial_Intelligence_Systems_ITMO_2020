@@ -1,6 +1,6 @@
 ## Lab work #1
 
-<img src="lab1/family_tree.png" alt="Family tree" width="400">
+<img src="family_tree.png" alt="Family tree" width="400">
 
 A genealogical tree implemented in `Prolog` language:
 
