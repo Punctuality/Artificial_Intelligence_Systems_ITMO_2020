@@ -1,6 +1,6 @@
 ## Lab work #1
 
-<img src="family_tree.png" alt="Family tree" width="400">
+![Family tree](family_tree.png)
 
 A genealogical tree implemented in `Prolog` language:
 
