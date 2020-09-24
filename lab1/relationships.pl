@@ -1,6 +1,6 @@
 % DICTIONARY
 
-% Sexual charachteristics
+% Gender
 
 % First gen males
 male(pronin_alexander_ivanovich).
