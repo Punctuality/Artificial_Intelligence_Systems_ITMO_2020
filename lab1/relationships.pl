@@ -143,3 +143,27 @@ ancestor_to(X, Y) :- parent_to(X, Z), related_to(Z, Y).
 
 cousin_to(X, Y) :- parent_to(Z1, X), sibling_to(Z1, Z2), parent_to(Z2, Y).
 cousin(X) :- cousin_to(X, _).
+
+% Additional task: dogs, cats, happy family
+
+% Only adults (and only one) can have pets, either dog, cat or nothing.
+
+have_cat(fedorov_nicholai).
+have_cat(fedorova_lidiya).
+
+have_cat(utkin_grigory).
+have_dog(platonova_tamara).
+
+have_dog(pronin_alexander_alexandrovich).
+have_dog(pronina_militina).
+
+have_dog(frolova_anna).
+have_dog(krasulin_pavel).
+
+petless(X) :- not(have_dog(X)), not(have_cat(X)).
+
+is_adult(X) :- parent_to(X, _).
+
+is_happy(X) :- is_adult(X), have_dog(X), not(have_cat(X)), spouse_to(X, Y), have_dog(Y), not(have_cat(Y)). % adult is happy with dogs
+is_happy(X) :- is_adult(X), have_cat(X), not(have_dog(X)), spouse_to(X, Y), have_cat(Y), not(have_dog(Y)). % adult is happy with dogs
+is_happy(X) :- not(is_adult(X)), parent_to(Y, X), is_happy(Y).                                             % child is happy with happy parents
