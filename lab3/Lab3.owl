@@ -1,0 +1,739 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#"
+     xml:base="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ITMO_2020_AI_Systems_Lab_3="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#a_member_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#a_member_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Astrounat"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Cosmounat"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Crew"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#as_a_payload_on -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#as_a_payload_on">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Payload"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Rocket"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#first_stage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#first_stage">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#stage"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Double_Stage_Rocket"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Single_Stage_Rocket"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Suborbital"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Triple_Stage_Rocket"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Rocket_Stage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#flies_on -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#flies_on">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Astrounat"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Cosmounat"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Rocket"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#second_stage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#second_stage">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#stage"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Double_Stage_Rocket"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Triple_Stage_Rocket"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Rocket_Stage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#stage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#stage">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#starts_from -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#starts_from">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Rocket"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Launch_Site"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#third_stage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#third_stage">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#stage"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Triple_Stage_Rocket"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Rocket_Stage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#use_engine -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#use_engine">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Rocket_Stage"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Thruster"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#works_on -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#works_on">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Mission_Control_Personel_Member"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Staff_Director"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Launch_Site"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#end_of_service -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#end_of_service">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#launched_at"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Satellite"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#launched_at -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#launched_at">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Payload"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#location -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#location">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Launch_Site"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#mass -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#mass">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Rocket"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Rocket_Stage"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Thruster"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#mission_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#mission_name">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Payload"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#name">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#rocket_model -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#rocket_model">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Rocket"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#specific_impulse -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#specific_impulse">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Thruster"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#thrust -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#thrust">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Thruster"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Astrounat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Astrounat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Atmospheric_Thruster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Atmospheric_Thruster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Thruster"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Outer_Space_Thruster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Chemical_Thruster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Chemical_Thruster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Thruster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Cosmounat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Cosmounat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Crew -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Crew">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Payload"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Double_Stage_Rocket -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Double_Stage_Rocket">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Ordbital"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Electric_Thruster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Electric_Thruster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Thruster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#First_Stage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#First_Stage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Rocket_Stage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Ground_Based_Launch_Site -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Ground_Based_Launch_Site">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Launch_Site"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Water_Based_Launch_Site"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Heavy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Heavy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Rocket"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Light"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Hybrid_Thruster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Hybrid_Thruster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Chemical_Thruster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Launch_Site -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Launch_Site"/>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Light -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Light">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Rocket"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Liquid_Propellant_Thruster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Liquid_Propellant_Thruster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Chemical_Thruster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Mission_Control_Personel_Member -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Mission_Control_Personel_Member">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Mobile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Mobile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Launch_Site"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Stationary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Nuclear_Thruster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Nuclear_Thruster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Thruster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Ordbital -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Ordbital">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Rocket"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Suborbital"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Outer_Space_Thruster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Outer_Space_Thruster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Thruster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Payload -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Payload"/>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Reusable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Reusable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Rocket"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Rocket -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Rocket"/>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Rocket_Stage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Rocket_Stage"/>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Satellite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Satellite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Payload"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Second_Stage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Second_Stage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Rocket_Stage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Single_Stage_Rocket -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Single_Stage_Rocket">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Ordbital"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Solid_Fuel_Thruster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Solid_Fuel_Thruster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Chemical_Thruster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Staff_Director -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Staff_Director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Stationary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Stationary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Launch_Site"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Suborbital -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Suborbital">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Rocket"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Third_Stage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Third_Stage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Rocket_Stage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Thruster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Thruster"/>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Traction_Thruster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Traction_Thruster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Thruster"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Vernier_Thruster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Triple_Stage_Rocket -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Triple_Stage_Rocket">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Ordbital"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Vernier_Thruster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Vernier_Thruster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Thruster"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Water_Based_Launch_Site -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Water_Based_Launch_Site">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Launch_Site"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Baikonur_Cosmodrome -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Baikonur_Cosmodrome">
+        <rdf:type rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Ground_Based_Launch_Site"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Stationary"/>
+        <name>Kazakhstan</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Blue_Origin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Blue_Origin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Light"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Reusable"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Suborbital"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Cape_Canaveral -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Cape_Canaveral">
+        <rdf:type rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Ground_Based_Launch_Site"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Stationary"/>
+        <location>Cape_Canaveral</location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Douglas_Hurley -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Douglas_Hurley">
+        <rdf:type rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Astrounat"/>
+        <a_member_of rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#SpaceX_Crew_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Electron -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Electron">
+        <rdf:type rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Light"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Single_Stage_Rocket"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Falcon-9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Falcon-9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Double_Stage_Rocket"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Heavy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Ordbital"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Reusable"/>
+        <first_stage rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Falcon-9-Stage-1"/>
+        <second_stage rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Falcon-9-Stage-2"/>
+        <starts_from rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Cape_Canaveral"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Falcon-9-Stage-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Falcon-9-Stage-1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#First_Stage"/>
+        <use_engine rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Merlin-8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Falcon-9-Stage-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Falcon-9-Stage-2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Second_Stage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Merlin-8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Merlin-8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Liquid_Propellant_Thruster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Robert_Behnken -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Robert_Behnken">
+        <rdf:type rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Astrounat"/>
+        <a_member_of rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#SpaceX_Crew_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Sea_Launch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Sea_Launch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Mobile"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Water_Based_Launch_Site"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Soyuz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Soyuz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Heavy"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Third_Stage"/>
+        <first_stage rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Soyuz-Stage-1"/>
+        <second_stage rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Soyuz-Stage-2"/>
+        <starts_from rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Baikonur_Cosmodrome"/>
+        <third_stage rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Soyuz-Stage-3"/>
+        <rocket_model>R7</rocket_model>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Soyuz-Stage-1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Soyuz-Stage-1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Soyuz-Stage-2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Soyuz-Stage-2"/>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Soyuz-Stage-3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Soyuz-Stage-3"/>
+    
+
+
+    <!-- http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#SpaceX_Crew_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#SpaceX_Crew_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Crew"/>
+        <as_a_payload_on rdf:resource="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Falcon-9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Astrounat"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Cosmounat"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Mission_Control_Personel_Member"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Staff_Director"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Chemical_Thruster"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Electric_Thruster"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Nuclear_Thruster"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Double_Stage_Rocket"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Single_Stage_Rocket"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Triple_Stage_Rocket"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#First_Stage"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Second_Stage"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Third_Stage"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Hybrid_Thruster"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Liquid_Propellant_Thruster"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/punctuality/ontologies/2020/9/ITMO_2020_AI_Systems_Lab_3#Solid_Fuel_Thruster"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
