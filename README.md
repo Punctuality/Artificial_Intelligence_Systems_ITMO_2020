@@ -11,6 +11,7 @@
 |[lab2](https://github.com/Punctuality/Artificial_-Intelligence_Systems_ITMO_2020/tree/master/lab2)|lab work #2|
 |[lab3](https://github.com/Punctuality/Artificial_-Intelligence_Systems_ITMO_2020/tree/master/lab3)|lab work #3|
 |[lab4](https://github.com/Punctuality/Artificial_-Intelligence_Systems_ITMO_2020/tree/master/lab4)|lab work #4|
+|[lab5](https://github.com/Punctuality/Artificial_-Intelligence_Systems_ITMO_2020/tree/master/lab5)|lab work #5|
 ---
 
 #### Author: [Sergey Fedorov](https://github.com/Punctuality)  
